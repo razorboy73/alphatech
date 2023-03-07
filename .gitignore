@@ -16,9 +16,12 @@
 /readme.html
 /wp-*.php
 /xmlrpc.php
+/index.html
 
 # Configuration
 wp-config.php
+
+/src/
 
 # Example themes
 /wp-content/themes/twenty*/
@@ -28,6 +31,8 @@ wp-config.php
 
 # Uploads
 /wp-content/uploads/
+/images
+/css
 
 # Log files
 *.log
