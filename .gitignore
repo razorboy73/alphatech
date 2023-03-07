@@ -31,7 +31,7 @@ wp-config.php
 
 # Uploads
 /wp-content/uploads/
-images
+
 /css
 
 # Log files
