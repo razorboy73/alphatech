@@ -1,9 +1,5 @@
 <?php
-function hook_css()
-{
-    echo "hooked in the head";
-}
-add_action('wp_head', 'hook_css');
+
 
 
 /**
@@ -11,6 +7,7 @@ add_action('wp_head', 'hook_css');
  */
 function alphatech_files()
 {
+    wp_enqueue_script('main-alpha', get_theme_file_uri('/build/index.js'), ['jquery'], 1, true);
     wp_enqueue_style('alphatech_main_styles', get_theme_file_uri('/build/style-index.css'));
     wp_enqueue_style('alphatech_extra_styles', get_theme_file_uri('/build/index.css'));
     wp_enqueue_style('font-awesome', get_theme_file_uri('/assets/css/font-awesome/font-awesome.min.css', array(), '4.7.0', true));
