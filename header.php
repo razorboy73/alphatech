@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="">
     <link rel="preload" href="/wp-content/themes/alphatech/fonts/roboto-v30-latin-regular.woff2" as="font" type="font/woff2">
     <link rel="preload" href="/wp-content/themes/alphatech/fonts/roboto-v30-latin-300.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/wp-content/themes/alphatech/fonts/roboto-condensed-v25-latin-300.woff2" as="font" type="font/woff2">
 
     <!-- roboto 400 - wp-content/themes/alphatech/fonts/roboto-v30-latin-regular.woff2
     roboto 300 - wp-content/themes/alphatech/fonts/roboto-v30-latin-300.woff2 -->
