@@ -13,8 +13,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
-    <link rel="preload" href="/alphatech/wp-content/themes/alphatech/fonts/roboto-v30-latin-regular.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="/alphatech/wp-content/themes/alphatech/fonts/roboto-v30-latin-300.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/wp-content/themes/alphatech/fonts/roboto-v30-latin-regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/wp-content/themes/alphatech/fonts/roboto-v30-latin-300.woff2" as="font" type="font/woff2">
 
     <!-- roboto 400 - wp-content/themes/alphatech/fonts/roboto-v30-latin-regular.woff2
     roboto 300 - wp-content/themes/alphatech/fonts/roboto-v30-latin-300.woff2 -->
