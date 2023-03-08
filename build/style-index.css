@@ -1343,7 +1343,7 @@ body.admin-bar .search-overlay {
 }
 .headline {
   margin: 0;
-  /* font-family: "Roboto Condensed", sans-serif; */
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
 }
 .headline--large {
@@ -1378,9 +1378,9 @@ body.admin-bar .search-overlay {
   margin-bottom: 1.9rem;
 }
 @media (min-width: 530px) {
-  /* .headline--small {
+  .headline--small {
     font-size: 1.6875rem;
-  } */
+  }
 }
 .headline--smaller {
   font-size: 1.5rem;
