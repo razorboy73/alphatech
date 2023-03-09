@@ -13,9 +13,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
-    <link rel="preload" href="/wp-content/themes/alphatech/fonts/roboto-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/wp-content/themes/alphatech/fonts/roboto-v30-latin-300.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/wp-content/themes/alphatech/fonts/roboto-condensed-v25-latin-300.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="<?php get_theme_file_uri('/fonts/roboto-v30-latin-regular.woff2') ?>" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="<?php get_theme_file_uri('/fonts/roboto-v30-latin-300.woff2') ?>" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="<?php get_theme_file_uri('/fonts/roboto-condensed-v25-latin-300.woff2') ?>" as="font" type="font/woff2" crossorigin>
 
     <!-- roboto 400 - wp-content/themes/alphatech/fonts/roboto-v30-latin-regular.woff2
     roboto 300 - wp-content/themes/alphatech/fonts/roboto-v30-latin-300.woff2 -->
