@@ -35,13 +35,14 @@
             <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
             <div class="site-header__menu group">
                 <nav class="main-navigation">
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Programs</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Campuses</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
+                    <?php
+                    /** 
+                     * Lists associated pages.
+                     */
+                    wp_nav_menu(array(
+                        'theme_location'    => 'headerMenuLocation', // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
+                    ));
+                    ?>
                 </nav>
                 <div class="site-header__util">
                     <a href="#" class="btn btn--small btn--orange float-left push-right">Login</a>

@@ -12,23 +12,28 @@
                 <div class="site-footer__col-two">
                     <h3 class="headline headline--small">Explore</h3>
                     <nav class="nav-list">
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Programs</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Campuses</a></li>
-                        </ul>
+                        <?php
+                        /** 
+                         * Lists associated pages.
+                         */
+                        wp_nav_menu(array(
+                            'theme_location'    => 'footerMenuLocationOne', // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
+                        ));
+                        ?>
                     </nav>
                 </div>
 
                 <div class="site-footer__col-three">
                     <h3 class="headline headline--small">Learn</h3>
                     <nav class="nav-list">
-                        <ul>
-                            <li><a href="#">Legal</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
+                        <?php
+                        /** 
+                         * Lists associated pages.
+                         */
+                        wp_nav_menu(array(
+                            'theme_location'    => 'footerMenuLocationTwo', // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
+                        ));
+                        ?>
                     </nav>
                 </div>
             </div>

@@ -19,6 +19,14 @@ add_action('wp_enqueue_scripts', 'alphatech_files');
 
 function theme_infrastructure()
 {
+    //register mutliple menus
+    register_nav_menus(array(
+        'headerMenuLocation' => 'Test Header Menu',
+        'footerMenuLocationOne' => 'Footer Location One Menu',
+        'footerMenuLocationTwo' => 'Footer Location Two Menu'
+
+    ));
+
     add_theme_support('title-tag');
 }
 
