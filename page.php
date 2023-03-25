@@ -99,11 +99,13 @@ while (have_posts()) {
                 <li><a href="#">Our Goals</a></li> -->
                 </ul>
             </div>
+
         <?php } ?>
 
         <div class="generic-content">
             <p><?php the_content(); ?></p>
         </div>
-    <?php }
+    </div>
+<?php }
 
 get_footer() ?>
