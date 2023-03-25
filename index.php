@@ -41,8 +41,11 @@ get_header();
     else :
     endif;
     wp_reset_postdata();
+
+    echo paginate_links();
         ?>
-        Hello from index.php
+
+
 
             </div>
 
