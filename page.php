@@ -27,6 +27,7 @@ while (have_posts()) {
     <div class="container container--narrow page-section">
 
         <?php
+        //metabox code
         //page has a parent
         $theParent = wp_get_post_parent_id();
 
