@@ -30,9 +30,22 @@ get_header();
 
 
             <?php
+            //Shows posts where the event date is great than or equual to today's date.
+            $today = date('Ymd');
             $args = array(
-                'posts_per_page' => 2,
-                "post_type" => "event"
+                'posts_per_page' => 4,
+                "post_type" => "event",
+                "meta_key" => "event_date",
+                "orderby" => "meta_value_num",
+                "order" => "ASC",
+                "meta_query" => array(
+                    array(
+                        'key' => 'event_date',
+                        'compare' => '>=',
+                        'value' => $today,
+                        'type' => 'numeric'
+                    )
+                )
             );
             $homepageEvents = new WP_Query($args);
 
