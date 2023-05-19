@@ -1,10 +1,45 @@
 <?php
 
-
-
 /**
  * Proper way to enqueue scripts and styles.
  */
+//Set args = Null to avoid errors from lack of parameters
+function pageBanner($args = NULL)
+{
+    //php logic for page  bannder
+    if (!isset($args['title'])) {
+        $args['title'] = get_the_title();
+    }
+    if (!isset($args['subtitle'])) {
+        $args['subtitle'] = get_field('page_banner_subtitle');
+    }
+    //if photo is blank, check ACF for photo
+    if (!isset($args['photo'])) {
+        if (get_field('page_banner_background_image') and !is_archive() and !is_home()) {
+            $args['photo'] = get_field('page_banner_background_image')['sizes']['pageBanner'];
+        } else {
+            $args['photo'] = get_theme_file_uri('/images/ocean.jpg');
+        }
+    }
+
+
+
+?>
+    <div class="page-banner">
+        <div class="page-banner__bg-image" style="background-image: url(<?php echo $args['photo']; ?>);"></div>
+        <div class="page-banner__content container container--narrow">
+            <h1 class="page-banner__title"><?php echo $args['title']; ?> </h1>
+            <div class="page-banner__intro">
+                <p><?php echo $args['subtitle']; ?></p>
+            </div>
+        </div>
+    </div>
+
+
+<?php
+
+}
+
 function alphatech_files()
 {
     wp_enqueue_script('main-alpha', get_theme_file_uri('/build/index.js'), ['jquery'], 1, true);
