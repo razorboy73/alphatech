@@ -22,6 +22,7 @@
 wp-config.php
 
 /src/
+/node_modules/
 
 # Example themes
 /wp-content/themes/twenty*/
